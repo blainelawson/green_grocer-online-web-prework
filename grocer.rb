@@ -4,21 +4,6 @@ def consolidate_cart(cart)
 
   cart.each do |item|
     binding.pry
-    item_count = items_array.count(item)
-    
-    cart.each do |items_hash|
-      items_hash.each do |key, value|
-        
-        item_values = {}
-          if item == key
-            value[:count] = item_count
-            item_values = value
-            
-            cart[item] = item_values
-            break       #breaks after first instance of item because all values for that item remain the same
-          end
-        end
-    end
     
   cart
 end
