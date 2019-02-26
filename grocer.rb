@@ -58,9 +58,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  if cart.Array
-    consolidate_cart(cart)
-  end
+  binding.pry
   cart.each do |item, values|
     # binding.pry
     if values[:clearance] == true
