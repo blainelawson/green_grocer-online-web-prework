@@ -84,5 +84,5 @@ def checkout(cart, coupons)
   total
   # binding.pry
   
-  apply_coupons(cart, coupons)
+  apply_coupons(consolidate_cart(cart), coupons)
 end
