@@ -57,7 +57,7 @@ def apply_coupons(cart, coupons)
       cart["#{item_name} W/COUPON"] = couponed_item["#{item_name} W/COUPON"]
       # binding.pry
       end
-    end
+  end
     binding.pry
     cart
 
