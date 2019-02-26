@@ -83,4 +83,6 @@ def checkout(cart, coupons)
   end
   total
   # binding.pry
+  
+  apply_coupons(cart, coupons)
 end
