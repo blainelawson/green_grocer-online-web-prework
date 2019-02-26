@@ -58,9 +58,9 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  binding.pry
+  # binding.pry
   cart.each do |item, values|
-    binding.pry
+    # binding.pry
     if values[:clearance] == true
       price = (values[:price] * 0.80).round(2)
       cart[item][:price] = price
@@ -71,7 +71,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  # binding.pry
+  binding.pry
   total = 0
   
   consolidate_cart(cart)
