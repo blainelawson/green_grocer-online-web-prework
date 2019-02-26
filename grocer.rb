@@ -72,5 +72,7 @@ end
 
 def checkout(cart, coupons)
   binding.pry
-  consolidate_cart(cart)[:price]
+  cart.each do |item, values|
+    consolidate_cart(item)
+  end
 end
