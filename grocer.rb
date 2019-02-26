@@ -42,7 +42,7 @@ def apply_coupons(cart, coupons)
 # binding.pry
         if cart["#{item_name} W/COUPON"]
           binding.pry
-          couponed_item["#{item_name} W/COUPON"][:count] += 1
+          cart["#{item_name} W/COUPON"][:count] += 1
           # binding.pry
         else
           couponed_item["#{item_name} W/COUPON"] = {
