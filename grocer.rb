@@ -59,6 +59,7 @@ end
 
 def apply_clearance(cart)
   # binding.pry
+ 
   cart.each do |item, values|
     # binding.pry
     if values[:clearance] == true
