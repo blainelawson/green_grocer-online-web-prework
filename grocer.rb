@@ -78,13 +78,13 @@ def checkout(cart, coupons)
   apply_coupons(cart, coupons)
   apply_clearance(cart)
   
-  cart.each do |items|
-    # binding.pry
-    items.each do |item, values|
-    # binding.pry
-      total = total + values[:price]
-    end
-  end
+  # cart.each do |items|
+  #   # binding.pry
+  #   items.each do |item, values|
+  #   # binding.pry
+  #     total = total + values[:price]
+  #   end
+  # end
 
   total
 
