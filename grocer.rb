@@ -17,14 +17,14 @@ def consolidate_cart(cart)
             value[:count] = item_count
             item_values = value
             
-            consolidated_cart[item] = item_values
+            cart[item] = item_values
             break       #breaks after first instance of item because all values for that item remain the same
           end
         end
     end
   end
     
-  consolidated_cart
+  cart
 end
 
 def apply_coupons(cart, coupons)
