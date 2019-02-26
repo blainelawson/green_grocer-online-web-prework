@@ -1,12 +1,9 @@
 require "pry"
 
 def consolidate_cart(cart)
-  consolidated_cart = {}
-  items_array = [] 
-  
-  items_array = cart.map {|items_hash| items_hash.keys}.flatten
-  
-  items_array.each do |item|
+
+  cart.each do |item|
+    binding.pry
     item_count = items_array.count(item)
     
     cart.each do |items_hash|
@@ -22,7 +19,6 @@ def consolidate_cart(cart)
           end
         end
     end
-  end
     
   cart
 end
