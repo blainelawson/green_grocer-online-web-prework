@@ -3,6 +3,7 @@ require "pry"
 def consolidate_cart(cart)
   consolidated_cart = {}
   items_array = [] 
+  binding.pry
   
   items_array = cart.map {|items_hash| items_hash.keys}.flatten
   
