@@ -71,7 +71,7 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  binding.pry
+  # binding.pry
   consolidate_cart(cart)
   cart.each {|item| item[:price]}
   # binding.pry
