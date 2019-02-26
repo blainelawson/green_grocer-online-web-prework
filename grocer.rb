@@ -41,9 +41,8 @@ def apply_coupons(cart, coupons)
       if cart[item_name]  && cart[item_name][:count] >= coupon_hash[:num]
 # binding.pry
         if cart["#{item_name} W/COUPON"]
-          # binding.pry
+          
           cart["#{item_name} W/COUPON"][:count] += 1
-          # binding.pry
         else
           couponed_item["#{item_name} W/COUPON"] = {
                                           price: coupon_hash[:cost],
