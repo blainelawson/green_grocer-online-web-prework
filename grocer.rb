@@ -50,11 +50,11 @@ def apply_coupons(cart, coupons)
                                           clearance: cart[item_name][:clearance],
                                           count: 1
                                         }
-                                        # binding.pry
+      cart["#{item_name} W/COUPON"] = couponed_item["#{item_name} W/COUPON"]                                        # binding.pry
         end
 
       cart[item_name][:count] -= coupon_hash[:num]
-      cart["#{item_name} W/COUPON"] = couponed_item["#{item_name} W/COUPON"]
+
       # binding.pry
       end
   end
