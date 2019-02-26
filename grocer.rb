@@ -67,21 +67,21 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  # binding.pry
-  total = 0
+  # # binding.pry
+  # total = 0
   
-  consolidate_cart(cart)
-  apply_coupons(cart, coupons)
-  apply_clearance(cart)
+  # consolidate_cart(cart)
+  # apply_coupons(cart, coupons)
+  # apply_clearance(cart)
   
-  cart.each do |items|
-    # binding.pry
-    items.each do |item, values|
-    # binding.pry
-      total = total + values[:price]
-    end
-  end
+  # cart.each do |items|
+  #   # binding.pry
+  #   items.each do |item, values|
+  #   # binding.pry
+  #     total = total + values[:price]
+  #   end
+  # end
 
-  total
+  # total
 
 end
